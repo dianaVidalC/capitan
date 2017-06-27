@@ -15,7 +15,11 @@ $( _ => {
         }
 
         state.coders = json;
-        $('.lista').append(asistencia(state.coders));
-        console.log($('.lista'));
+
+        const lista=state.coders.forEach((e)=>{
+            console.log(e.name);
+            const li=$('<li>'+e.name+'<input type="checkbox"></li>');
+            $('.lista').append(li);
+        })
     })
 })
