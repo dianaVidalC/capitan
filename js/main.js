@@ -3,8 +3,11 @@
  */
 'use strict';
 
-const asistencia=(lista)=>{
+const asistencia=(coders)=>{
 
-    const li=$('<li>lista.name<input type="checkbox">');
-    return li;
+    const lista=coders.forEach((e)=>{
+        const li=$('<li>'+e.name+'<input type="checkbox"></li>');
+    })
+
+    return lista;
 }

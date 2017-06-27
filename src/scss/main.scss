@@ -11,7 +11,6 @@
 .titulo{
   background-color: rgb($red,$green,$blue);
   color: $color-white;
-  width: $col-12;
   padding: $number-base*1.7;
   font-size: $number-base*2;
 }
@@ -21,20 +20,12 @@ ul{
 }
 
 .col-3{
-  width: $col-3;
   display: inline-block;
 }
 
-.col-8{
-  width: $col-8;
+.col-7{
   display: inline-block;
-  height: 50rem;
 }
-
-/*.contenedor-1{
-
-  width: $col-12;
-}*/
 
 .margen-abajo{
   margin-bottom: $number-base;
@@ -51,8 +42,12 @@ ul{
   background-color: rgb($red,$green,$blue);
 }
 
-.aside{
+.aside, .footer{
   text-align: center;
   background-color: $color-oscuro;
   color: $color-white;
+}
+
+.footer{
+  margin-top: $number-base * 1.5;
 }

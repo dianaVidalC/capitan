@@ -7,11 +7,15 @@ const state={
     coders:null
 }
 
-$(_=>{
+$( _ => {
+    getJSON('http://laboratoria.cuadra.co:9339/api/v1/students/', (err, json) => {
 
-    $getJSON("http://laboratoria.cuadra.co:9339/api/v1/students/",(json)=>{
-        state.coders=json;
+        if (err) {
+            return alert(err.message);
+        }
+
+        state.coders = json;
+
+        $('.lista').append(asistencia(state.coders));
     })
-
-    $('.asistencia').append(asistencia(state.coders));
 })
