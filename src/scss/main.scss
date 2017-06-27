@@ -1,0 +1,58 @@
+@import "colors";
+@import "resolutions";
+@import "fonts";
+
+*{
+  margin:0;
+  padding:0;
+  font-family: $font;
+}
+
+.titulo{
+  background-color: rgb($red,$green,$blue);
+  color: $color-white;
+  width: $col-12;
+  padding: $number-base*1.7;
+  font-size: $number-base*2;
+}
+
+ul{
+  margin:$number-base;
+}
+
+.col-3{
+  width: $col-3;
+  display: inline-block;
+}
+
+.col-8{
+  width: $col-8;
+  display: inline-block;
+  height: 50rem;
+}
+
+/*.contenedor-1{
+
+  width: $col-12;
+}*/
+
+.margen-abajo{
+  margin-bottom: $number-base;
+}
+
+.indice li{
+  background-color: $color-oscuro;
+  color: $color-white;
+  margin:$number-base;
+  padding: $number-base*0.8;
+}
+
+.indice li:last-child{
+  background-color: rgb($red,$green,$blue);
+}
+
+.aside{
+  text-align: center;
+  background-color: $color-oscuro;
+  color: $color-white;
+}
