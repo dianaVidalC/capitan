@@ -15,7 +15,7 @@ $( _ => {
         }
 
         state.coders = json;
-
         $('.lista').append(asistencia(state.coders));
+        console.log($('.lista'));
     })
 })

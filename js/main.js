@@ -6,6 +6,7 @@
 const asistencia=(coders)=>{
 
     const lista=coders.forEach((e)=>{
+        console.log(e.name);
         const li=$('<li>'+e.name+'<input type="checkbox"></li>');
     })
 
